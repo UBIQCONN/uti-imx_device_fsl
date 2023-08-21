@@ -13,3 +13,17 @@ allow system_app fs_bpf:dir { search };
 allow system_app hal_graphics_allocator_default_tmpfs:file { read write };
 
 get_prop(system_app, vendor_default_prop)
+
+#OTA system updater app
+allow system_app fuse:dir r_dir_perms;
+allow system_app fuse:file r_file_perms;
+allow system_app storage_file:dir r_dir_perms;
+allow system_app storage_file:file r_file_perms;
+allow system_app cache_file:lnk_file r_file_perms;
+allow system_app apk_data_file:dir rw_dir_perms;
+allow system_app apk_data_file:file create_file_perms;
+allow system_app ota_package_file:dir rw_dir_perms;
+allow system_app ota_package_file:file create_file_perms;
+allow system_app metadata_file:dir search;
+allow system_app ota_metadata_file:dir rw_dir_perms;
+allow system_app ota_metadata_file:file create_file_perms;
