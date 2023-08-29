@@ -88,7 +88,7 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # -------@block_bluetooth-------
 # NXP 8987 BT
-BOARD_HAVE_BLUETOOTH_NXP := true
+BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(IMX_DEVICE_PATH)/bluetooth
 
 # -------@block_sensor-------

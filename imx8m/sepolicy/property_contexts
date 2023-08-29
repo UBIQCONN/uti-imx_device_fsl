@@ -203,6 +203,8 @@ vendor.rw.VIDEO_RENDER_NAME                u:object_r:vendor_default_prop:s0
 vendor.sys.SECOND_DISPLAY_ENABLED          u:object_r:vendor_default_prop:s0
 vendor.AQROOT                              u:object_r:vendor_default_prop:s0
 vendor.CL_NOPREPROCESS                     u:object_r:vendor_default_prop:s0
+ro.rfkilldisabled                   u:object_r:vendor_default_prop:s0
+
 
 # vendor_wifi_version
 vendor.wlan.driver.version    u:object_r:vendor_wifi_version:s0

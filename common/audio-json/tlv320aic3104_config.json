@@ -1,0 +1,11 @@
+{
+  "driver_name": "tlv320aic3104-audio",
+  "bus_name": "bus1_system_sound_out",
+  "supported_out_devices": ["speaker", "bus"],
+  "supported_in_devices": ["builtin_mic"],
+  "support_lpa": 1,
+
+  "out_volume_ctl": [
+    "PCM"
+  ]
+}

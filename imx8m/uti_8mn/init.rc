@@ -160,10 +160,10 @@ on early-boot && property:vendor.skip.charger_not_need=0
     chmod 0664 /sys/kernel/debug/sync/sw_sync
 
     # Default backlight device
-    setprop vendor.hw.backlight.dev "32e10000.dsi_controller.0"
+    setprop vendor.hw.backlight.dev "backlight"
     # Chmod/chown FSL specific sys entry
-    chown system system /sys/class/backlight/32e10000.dsi_controller.0/brightness
-    chmod 0660 /sys/class/backlight/32e10000.dsi_controller.0/brightness
+    chown system system /sys/class/backlight/backlight/brightness
+    chmod 0660 /sys/class/backlight/backlight/brightness
 
     # Set light sensor sysfs path and light sensor threshold lux value
     setprop ro.hardware.lightsensor "/sys/class/i2c-dev/i2c-0/device/0-0044/"
@@ -177,6 +177,8 @@ on early-boot && property:vendor.skip.charger_not_need=0
 
     start vendor.wifi_hal_legacy
 
+on boot
+    setprop ro.rfkilldisabled 1
 
 service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
     -O/data/vendor/wifi/wpa/sockets -puse_p2p_group_interface=1 \

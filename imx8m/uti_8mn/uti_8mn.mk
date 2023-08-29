@@ -201,10 +201,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # -------@block_audio-------
 # Audio card json
 PRODUCT_COPY_FILES += \
-    $(CONFIG_REPO_PATH)/common/audio-json/wm8524_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/configs/audio/wm8524_config.json \
-    $(CONFIG_REPO_PATH)/common/audio-json/spdif_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/configs/audio/spdif_config.json \
-    $(CONFIG_REPO_PATH)/common/audio-json/micfil_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/configs/audio/micfil_config.json \
-    $(CONFIG_REPO_PATH)/common/audio-json/btsco_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/configs/audio/btsco_config.json \
+    $(CONFIG_REPO_PATH)/common/audio-json/tlv320aic3104_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/configs/audio/tlv320aic3104_config.json \
     $(CONFIG_REPO_PATH)/common/audio-json/readme.txt:$(TARGET_COPY_OUT_VENDOR)/etc/configs/audio/readme.txt
 
 PRODUCT_PACKAGES += \
@@ -312,8 +309,7 @@ PRODUCT_PACKAGES += \
 
 # NXP 8987 Wifi and Bluetooth Combo Firmware
 PRODUCT_COPY_FILES += \
-    vendor/nxp/imx-firmware/nxp/FwImage_8987/sdiouart8987_combo_v0.bin:vendor/firmware/sdiouart8987_combo_v0.bin \
-    vendor/nxp/imx-firmware/nxp/android_wifi_mod_para.conf:vendor/firmware/wifi_mod_para_sd8987.conf
+	$(LOCAL_PATH)/bt-wifi-firmware/BCM4359C0.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/BCM4359C0.hcd  
 
 # Wifi regulatory
 PRODUCT_COPY_FILES += \

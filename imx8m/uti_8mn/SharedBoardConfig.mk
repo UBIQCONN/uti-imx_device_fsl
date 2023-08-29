@@ -49,10 +49,12 @@ BOARD_VENDOR_KERNEL_MODULES += \
     $(KERNEL_OUT)/sound/soc/codecs/snd-soc-wm8524.ko \
     $(KERNEL_OUT)/sound/soc/codecs/snd-soc-ak5558.ko \
     $(KERNEL_OUT)/sound/soc/codecs/snd-soc-ak4458.ko \
+    $(KERNEL_OUT)/sound/soc/codecs/snd-soc-tlv320aic3x.ko \
     $(KERNEL_OUT)/sound/soc/fsl/snd-soc-imx-ak4458.ko \
     $(KERNEL_OUT)/sound/soc/fsl/snd-soc-imx-ak5558.ko \
     $(KERNEL_OUT)/sound/soc/codecs/snd-soc-bt-sco.ko \
     $(KERNEL_OUT)/sound/soc/codecs/snd-soc-hdmi-codec.ko \
+    $(KERNEL_OUT)/sound/soc/codecs/snd-soc-simple-amplifier.ko \
     $(KERNEL_OUT)/sound/soc/generic/snd-soc-simple-card.ko \
     $(KERNEL_OUT)/sound/soc/generic/snd-soc-simple-card-utils.ko \
     $(KERNEL_OUT)/sound/soc/fsl/snd-soc-imx-audmux.ko \
@@ -106,6 +108,9 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES += \
     $(KERNEL_OUT)/drivers/tty/serial/imx.ko \
     $(KERNEL_OUT)/drivers/watchdog/imx2_wdt.ko \
     $(KERNEL_OUT)/drivers/regulator/pca9450-regulator.ko \
+    $(KERNEL_OUT)/drivers/regulator/rohm-regulator.ko \
+    $(KERNEL_OUT)/drivers/mfd/rohm-bd718x7.ko \
+    $(KERNEL_OUT)/drivers/regulator/bd718x7-regulator.ko \
     $(KERNEL_OUT)/drivers/gpio/gpio-mxc.ko \
     $(KERNEL_OUT)/drivers/gpio/gpio-pca953x.ko \
     $(KERNEL_OUT)/drivers/thermal/device_cooling.ko \
@@ -115,6 +120,7 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES += \
     $(KERNEL_OUT)/drivers/cpufreq/imx-cpufreq-dt.ko \
     $(KERNEL_OUT)/drivers/nvmem/nvmem-imx-ocotp.ko \
     $(KERNEL_OUT)/drivers/pwm/pwm-imx27.ko \
+    $(KERNEL_OUT)/drivers/video/backlight/pwm_bl.ko \
     $(KERNEL_OUT)/drivers/mmc/host/sdhci-esdhc-imx.ko \
     $(KERNEL_OUT)/drivers/mmc/host/cqhci.ko \
     $(KERNEL_OUT)/drivers/i2c/busses/i2c-imx.ko \
