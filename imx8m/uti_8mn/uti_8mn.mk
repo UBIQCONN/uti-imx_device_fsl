@@ -423,3 +423,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.activities_on_secondary_displays.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.activities_on_secondary_displays.xml \
     frameworks/native/data/etc/android.software.picture_in_picture.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.picture_in_picture.xml
 
+PRODUCT_PACKAGES += \
+    libgpiod \
+    gpiodetect \
+    gpioget \
+    gpioset \
+    gpioinfo 
+
