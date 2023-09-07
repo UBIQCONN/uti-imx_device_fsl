@@ -5,7 +5,18 @@
   "supported_in_devices": ["builtin_mic"],
   "support_lpa": 1,
 
-  "out_volume_ctl": [
-    "PCM"
+  "init_ctl": [
+    {"name": "PCM Playback Volume", "type": "int", "val": 105}
+  ],
+
+  "speaker_ctl": [
+    {"name": "Left Line Mixer DACR1 Switch", "type": "int", "val": 1},
+    {"name": "Left Line Mixer DACL1 Switch", "type": "int", "val": 1}
+  ],
+
+  "builtin_mic_ctl": [
+    {"name": "Right PGA Mixer Line1L Switch", "type": "int", "val": 1},
+    {"name": "Left PGA Mixer Line1L Switch", "type": "int", "val": 1}
   ]
+
 }

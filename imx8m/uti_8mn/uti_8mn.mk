@@ -430,3 +430,6 @@ PRODUCT_PACKAGES += \
     gpioset \
     gpioinfo 
 
+# Add animation
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/animation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip 
