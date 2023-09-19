@@ -21,12 +21,36 @@
     <bool name="def_user_setup_complete">true</bool>
     <bool name="def_bluetooth_on">false</bool>
     <bool name="def_stay_on_while_plugged_in">true</bool>
-    <bool name="def_lockscreen_disabled">false</bool>
+    <bool name="def_lockscreen_disabled">true</bool>
 
     <!-- Initial value for the Settings.Secure.IMMERSIVE_MODE_CONFIRMATIONS setting,
          which is a comma separated list of packages that no longer need confirmation
          for immersive mode.
          Override to disable immersive mode confirmation for certain packages. -->
     <string name="def_immersive_mode_confirmations" translatable="false">confirmed</string>
+
+    <!-- Default for Settings.Secure.WAKE_GESTURE_ENABLED -->
+    <bool name="def_wake_gesture_enabled">false</bool>
+
+    <!-- Default for Settings.Secure.SKIP_GESTURE -->
+    <bool name="def_skip_gesture">true</bool>
+
+    <!-- user interface sound effects -->
+    <integer name="def_lockscreen_sounds_enabled">0</integer>
+    <integer name="def_power_sounds_enabled">0</integer>
+
+    <!-- Default for Settings.Secure.LOCK_SCREEN_SHOW_NOTIFICATIONS, 1==on -->
+    <integer name="def_lock_screen_show_notifications">0</integer>
+
+    <!-- 0 == off, 3 == on -->
+    <integer name="def_location_mode">0</integer>
+    <bool name="assisted_gps_enabled">false</bool>
+    <bool name="def_netstats_enabled">false</bool>
+
+    <!-- Default for Settings.Secure.CHARGING_SOUNDS_ENABLED -->
+    <bool name="def_charging_sounds_enabled">false</bool>
+
+    <!-- Default for UI touch sounds enabled -->
+    <bool name="def_sound_effects_enabled">false</bool>
 
 </resources>
