@@ -6,7 +6,14 @@
   "support_lpa": 1,
 
   "init_ctl": [
-    {"name": "PCM Playback Volume", "type": "int", "val": 105},
+    {"name": "PCM Playback Volume", "type": "int", "val": 127},
+    {"name": "De-emphasis Switch", "type": "int", "val": 1},
+    {"name": "Digital Effect Switch", "type": "int", "val": 1},
+    {"name": "Left Line Mixer DACR1 Playback Volume", "type": "int", "val": 0},
+    {"name": "Left Line Mixer DACL1 Playback Volume", "type": "int", "val": 0},
+    {"name": "Right Line Mixer DACR1 Playback Volume", "type": "int", "val": 0},
+    {"name": "Right Line Mixer DACL1 Playback Volume", "type": "int", "val": 0},
+    {"name": "PGA Capture Volume", "type": "int", "val": 0},
     {"name": "Right PGA Mixer Line1L Switch", "type": "int", "val": 0},
     {"name": "Right PGA Mixer Line1R Switch", "type": "int", "val": 0},
     {"name": "Left PGA Mixer Line1L Switch", "type": "int", "val": 0},
@@ -19,17 +26,22 @@
 
   "speaker_ctl": [
     {"name": "Left Line Mixer DACR1 Switch", "type": "int", "val": 1},
-    {"name": "Left Line Mixer DACL1 Switch", "type": "int", "val": 1}
+    {"name": "Left Line Mixer DACL1 Switch", "type": "int", "val": 1},
+    {"name": "Left Line Mixer DACR1 Playback Volume", "type": "int", "val": 103},
+    {"name": "Left Line Mixer DACL1 Playback Volume", "type": "int", "val": 103}
   ],
 
   "earpiece_ctl": [
     {"name": "Right Line Mixer DACR1 Switch", "type": "int", "val": 1},
-    {"name": "Right Line Mixer DACL1 Switch", "type": "int", "val": 1}
+    {"name": "Right Line Mixer DACL1 Switch", "type": "int", "val": 1},
+    {"name": "Right Line Mixer DACR1 Playback Volume", "type": "int", "val": 103},
+    {"name": "Right Line Mixer DACL1 Playback Volume", "type": "int", "val": 103}
   ],
 
   "builtin_mic_ctl": [
     {"name": "Right PGA Mixer Line1L Switch", "type": "int", "val": 1},
-    {"name": "Left PGA Mixer Line1L Switch", "type": "int", "val": 1}
+    {"name": "Left PGA Mixer Line1L Switch", "type": "int", "val": 1},
+    {"name": "PGA Capture Volume", "type": "int", "val": 60}
   ]
 
 }

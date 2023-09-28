@@ -8,7 +8,7 @@ IMX_DEVICE_PATH := $(strip $(patsubst %/, %, $(dir $(CURRENT_FILE_PATH))))
 include $(IMX_DEVICE_PATH)/SharedBoardConfig.mk
 
 -include $(CONFIG_REPO_PATH)/common/imx_path/ImxPathConfig.mk
-include $(CONFIG_REPO_PATH)/imx8m/ProductConfigCommon.mk
+include $(CONFIG_REPO_PATH)/imx8m/uti_8mn/ProductConfigCommon.mk
 
 # -------@block_common_config-------
 
@@ -342,7 +342,7 @@ PRODUCT_COPY_FILES += \
     $(CONFIG_REPO_PATH)/common/seccomp_policy/codec2.vendor.base.policy:vendor/etc/seccomp_policy/codec2.vendor.base.policy \
     $(CONFIG_REPO_PATH)/common/seccomp_policy/codec2.vendor.ext.policy:vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     DirectAudioPlayer
 
 # imx c2 codec binary
@@ -371,7 +371,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-vsi-npu-server
 
 # Tensorflow lite camera demo
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
                     tflitecamerademo
 
 # -------@block_miscellaneous-------
@@ -394,9 +394,6 @@ endif
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.output.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.output.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
-    frameworks/native/data/etc/android.hardware.camera.external.xml:vendor/etc/permissions/android.hardware.camera.external.xml \
-    frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
-    frameworks/native/data/etc/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml \
     frameworks/native/data/etc/android.hardware.ethernet.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.ethernet.xml \
     frameworks/native/data/etc/android.hardware.screen.landscape.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.screen.landscape.xml \
     frameworks/native/data/etc/android.hardware.screen.portrait.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.screen.portrait.xml \

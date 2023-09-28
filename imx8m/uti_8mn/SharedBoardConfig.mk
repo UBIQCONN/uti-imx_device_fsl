@@ -3,11 +3,6 @@ KERNEL_NAME := Image
 TARGET_KERNEL_ARCH := arm64
 IMX8MN_USES_GKI := true
 
-# NXP 8987 wifi driver module
-BOARD_VENDOR_KERNEL_MODULES += \
-    $(TARGET_OUT_INTERMEDIATES)/MXMWIFI_OBJ/mlan.ko \
-    $(TARGET_OUT_INTERMEDIATES)/MXMWIFI_OBJ/moal.ko
-
 # CONFIG_TOUCHSCREEN_SYNAPTICS_DSX_I2C: synaptics_dsx_i2c.ko, mipi-panel touch driver module
 # CONFIG_VIDEO_MXC_CSI_CAMERA: mx6s_capture.ko, it's csi adapt driver which is the input of v4l2 framework
 # CONFIG_MXC_CAMERA_OV5640_MIPI_V2: ov5640_camera_mipi_v2.ko, sensor ov5640 driver, the input of mipi
