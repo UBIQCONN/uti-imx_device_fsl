@@ -174,7 +174,7 @@ PRODUCT_PACKAGES += \
 # -------@block_camera-------
 ifneq ($(PRODUCT_IMX_CAR),true)
 ifneq ($(POWERSAVE),true)
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6-service-google \
     android.hardware.camera.provider@2.6-impl-google \
     libgooglecamerahal \
@@ -182,7 +182,7 @@ PRODUCT_PACKAGES += \
     lib_profiler \
     libimxcamerahwl_impl
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-external-service \
     android.hardware.camera.provider@2.4-impl \
     camera.device@1.0-impl \

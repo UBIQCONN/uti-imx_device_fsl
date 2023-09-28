@@ -216,14 +216,14 @@ PRODUCT_COPY_FILES += \
     $(IMX_DEVICE_PATH)/usb_audio_policy_configuration-direct-output.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration-direct-output.xml
 
 # -------@block_camera-------
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     $(IMX_DEVICE_PATH)/camera_config_imx8mn.json:$(TARGET_COPY_OUT_VENDOR)/etc/configs/camera_config_imx8mn.json
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     $(IMX_DEVICE_PATH)/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml
 
-PRODUCT_SOONG_NAMESPACES += hardware/google/camera
-PRODUCT_SOONG_NAMESPACES += vendor/nxp-opensource/imx/camera
+#PRODUCT_SOONG_NAMESPACES += hardware/google/camera
+#PRODUCT_SOONG_NAMESPACES += vendor/nxp-opensource/imx/camera
 
 # -------@block_display-------
 # PRODUCT_AAPT_CONFIG += xlarge large tvdpi hdpi xhdpi xxhdpi
