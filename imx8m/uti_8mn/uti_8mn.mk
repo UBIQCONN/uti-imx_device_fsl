@@ -430,3 +430,8 @@ PRODUCT_PACKAGES += \
 # Add animation
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/animation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip 
+
+# Audio voice volume steps
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.vc_call_vol_steps=8 
+
