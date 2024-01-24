@@ -127,7 +127,7 @@ ifeq ($(TARGET_USE_DYNAMIC_PARTITIONS),true)
     TARGET_BOARD_DTS_CONFIG += imx8mn:imx8mn-evk.dtb
     # imx8mn with MIPI panel display and wifi
     # TARGET_BOARD_DTS_CONFIG += imx8mn-ddr4-mipi-panel:imx8mn-ddr4-evk-rm67191.dtb
-    TARGET_BOARD_DTS_CONFIG += imx8mn-ddr4-mipi-panel:imx8mn-ddr4-evk-sva500.dtb
+    TARGET_BOARD_DTS_CONFIG += imx8mn-ddr4-mipi-panel:imx8mn-ddr4-evk-sva500-tg720.dtb
     # imx8mn with MIPI-HDMI display and wifi and M7 image
     TARGET_BOARD_DTS_CONFIG += imx8mn-ddr4-rpmsg:imx8mn-ddr4-evk-rpmsg.dtb
     # imx8mn with MIPI panel display and wifi
