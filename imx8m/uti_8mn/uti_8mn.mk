@@ -435,3 +435,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=8 
 
+# Add prebuilt packages
+PRODUCT_PACKAGES += \
+    prebuilt_iphs \
+    prebuilt_ime_japaneses \
+    prebuilt_ime_pinyin \
+    prebuilt_ime_leankey
+
+# Add default Launcher
+PRODUCT_PROPERTY_OVERRIDES += ro.launcher.def=com.ubiqconn.iphs.yahsat
+
+# Enable ADB over network on port 5555
+PRODUCT_PRODUCT_PROPERTIES += persist.adb.tcp.port=5555
