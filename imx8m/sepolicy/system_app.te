@@ -27,3 +27,10 @@ allow system_app ota_package_file:file create_file_perms;
 allow system_app metadata_file:dir search;
 allow system_app ota_metadata_file:dir rw_dir_perms;
 allow system_app ota_metadata_file:file create_file_perms;
+
+#IPHS change file permission for system app
+allow system_app sysfs:file { getattr open read };
+allow system_app sysfs_leds:dir search;
+allow system_app sysfs:file write;
+allow system_app sysfs:file { getattr open };
+allow system_app sysfs_leds:dir search;

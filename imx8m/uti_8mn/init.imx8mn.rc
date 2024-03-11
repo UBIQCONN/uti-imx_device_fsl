@@ -50,3 +50,10 @@ on property:sys.boot_completed=1
     # system-background is for system tasks that should only run on
     # little cores, not on bigs to be used only by init
     write /dev/cpuset/system-background/cpus 0-2
+
+# change leds permission for system app
+on early-boot
+chown system system /sys/class/leds/emergency:status/brightness
+chmod 0666 /sys/class/leds/emergency:status/brightness
+chown system system /sys/class/leds/keyboard:status/brightness
+chmod 0666 /sys/class/leds/keyboard:status/brightness
